@@ -8,6 +8,19 @@ This repository's goal is to share PhpStorm config between team members to keep 
 * Default database connections for [ddev](https://github.com/drud/ddev)
 * .editorconfig
 
+### Prerequisites
+
+In order to be able to use phpcs globally, you have to have it installed globally with `composer`, also you need to configure the `Drupal` and `DrupalPractice` coding standard if you haven't done it before.
+
+```shell
+composer global require "squizlabs/php_codesniffer=*"
+composer global require drupal/coder
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
+```
+
+You can verify if your setup is working properly with running `phpcs -i` and checking if the coding standards mentioned above are installed.
+
 ### Configure a settings repository
 > On each computer where you want your settings to be applied, select **File | Manage IDE Settings | Settings Repository** from the main menu. Specify the URL of the repository you've created, and click **Overwrite Local**.
 >

@@ -24,6 +24,7 @@ fi
 # @todo
 
 # Copy new files to the respective places.
+# @todo Ask the user if they are sure to run the script.
 if [ "${PhpStormVersion}" != "" ]; then
   echo "Copying files to ${ConfigLibrary}"
   cp -Rf config/. "${ConfigLibrary}"
