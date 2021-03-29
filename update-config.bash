@@ -27,6 +27,11 @@ fi
 # @todo Ask the user if they are sure to run the script.
 if [ "${PhpStormVersion}" != "" ]; then
   echo "Copying files to ${ConfigLibrary}"
-  cp -Rf config/. "${ConfigLibrary}"
+  # Find all files located in config folder that are not hidden filed or README or this script.
+  folders="$(find . -type d -not -path '*/\.*' -not -path './README.md' -not -path './update-config.bash' -not -path '.')"
+  for folder in ${folders}
+  do
+    cp -Rf "${folder}" "${ConfigLibrary}"
+  done
   echo "Your PHPStorm configuration has been updated successfully."
 fi

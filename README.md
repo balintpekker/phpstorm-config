@@ -22,9 +22,9 @@ phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer
 You can verify if your setup is working properly with running `phpcs -i` and checking if the coding standards mentioned above are installed.
 
 ### Configure a settings repository
-> On each computer where you want your settings to be applied, select **File | Manage IDE Settings | Settings Repository** from the main menu. Specify the URL of the repository you've created, and click **Overwrite Local**.
->
-> You can click **Merge** if you want the repository to keep a combination of the remote settings and your local settings. If any conflicts are detected, a dialog will be displayed where you can resolve these conflicts.
+On each computer where you want your settings to be applied, select **File | Manage IDE Settings | Settings Repository** from the main menu. Specify the URL of the repository you've created, and click **Overwrite Local**.
+
+You can click **Merge** if you want the repository to keep a combination of the remote settings and your local settings. If any conflicts are detected, a dialog will be displayed where you can resolve these conflicts.
 
 Your local settings will be automatically synchronized with the settings stored in the repository each time you perform an **Update Project** or a **Push** operation, or when you close your project or exit PhpStorm.
 
