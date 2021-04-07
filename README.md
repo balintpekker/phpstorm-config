@@ -35,6 +35,6 @@ Further information on how to configure these settings can be found [here](https
 If you are for some reason unable to configure the settings repository to overwrite your local configuration, you can do it manually by copying the files from the repository to the respective places.
 
 Run
-`./update-config.sh`
+`./update-config.bash`
 
 > You can add an alias to this file, or paste it into your `PATH` in order to execute it without having to use the extension. It is recommended to set up an alias for it, and run the script occasionally to check for updates.

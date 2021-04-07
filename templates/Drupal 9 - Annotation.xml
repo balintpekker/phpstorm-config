@@ -1,0 +1,344 @@
+<templateSet group="Drupal 9 - Annotation">
+  <template name="@FieldType" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @FieldType(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; *   category = @Translation(&quot;$CATEGORY$&quot;),&#10; *   default_widget = &quot;$DEFAULTWIDGET$&quot;,&#10; *   default_formatter = &quot;$DEFAULTFORMATTER$&quot;,&#10; *   list_class = &quot;$LISTCLASS$&quot;,&#10; *   no_ui = $NOUI$,&#10; *   cardinality = $CARDINALITY$&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Field Type" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CATEGORY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULTWIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULTFORMATTER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LISTCLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NOUI" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CARDINALITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Block" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @Block(&#10; *  id = &quot;$ID$&quot;,&#10; *  admin_label = @Translation(&quot;$LABEL$&quot;),&#10; *  category = @Translation(&quot;$CATEGORY$&quot;),&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Block" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CATEGORY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@FieldFormatter" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @FieldFormatter(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; *   weight = $WEIGHT$,&#10; *   field_types = {&#10; *     &quot;$FIELDTYPE$&quot;&#10; *   }&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Field Formatter" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELDTYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@FieldWidget" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @FieldWidget(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION$&quot;),&#10; *   multiple_values = $MULTIPLE$,&#10; *   weight = $WEIGHT$,&#10; *   field_types = {&#10; *     &quot;$FIELDTYPE$&quot;&#10; *   }&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Field Widget" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MULTIPLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELDTYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Filter" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @Filter(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; *   type = $TYPE$,&#10; *   weight = $WEIGHT$,&#10; *   status = $STATUS$,&#10; *   settings = {&#10; *     &quot;$SETTINGSKEY$&quot; = &quot;$SETTINGSVALUE$&quot;&#10; *   }&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Filter" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATUS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SETTINGSKEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SETTINGSVALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@FormElement" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @FormElement(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Form Element" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@RenderElement" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @RenderElement(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Render Element" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Constraint" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @Constraint(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   type = { &quot;$TYPE$&quot; }&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Constraint" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@MigrateSource" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @MigrateSource(&#10; *   id = &quot;$ID$&quot;,&#10; *   source_module = &quot;$SOURCEMODULE$&quot;&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Migrate Source" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SOURCEMODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@MigrateDestination" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @MigrateDestination(&#10; *   id = &quot;$ID$&quot;,&#10; *   destination_module = &quot;$DESTINATIONMODULE$&quot;&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Migrate Destination" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESTINATIONMODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@MigrateProcessPlugin" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @MigrateProcessPlugin(&#10; *   id = &quot;$ID$&quot;&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Migrate Process Plugin" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@MigrateField" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @MigrateField(&#10; *   id = &quot;$ID$&quot;,&#10; *   core = {$CORE$},&#10; *   source_module = &quot;$SOURCEMODULE$&quot;,&#10; *   destination_module = &quot;$DESTINATIONMODULE$&quot;,&#10; *   weight = $WEIGHT$&#10; *   type_map = {&#10; *     &quot;$TYPEMAPKEY$&quot; = &quot;$TYPEMAPVALUE$&quot;&#10; *   }&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Migrate Field" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CORE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SOURCEMODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESTINATIONMODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPEMAPKEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPEMAPVALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@RestResource" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @RestResource(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   serialization_class = &quot;$SERIALIZATIONCLASS$&quot;,&#10; *   uri_paths = {&#10; *     &quot;$URIPATHKEY$&quot; = &quot;$URIPATHVALUE$&quot;&#10; *   }&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Rest Resource" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SERIALIZATIONCLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URIPATHKEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URIPATHVALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@SearchApiBackend" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @SearchApiBackend(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;)&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Search Api Backend" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@SearchApiDataType" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @SearchApiDataType(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; *   fallback_type = &quot;$FALLBACKTYPE$&quot;,&#10; *   prefix = &quot;$PREFIX$&quot;,&#10; *   default = &quot;$DEFAULT$&quot;&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Search Api Data Type" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FALLBACKTYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PREFIX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@SearchApiDatasource" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @SearchApiDatasource(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Search Api Datasource" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@SearchApiDisplay" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @SearchApiDisplay(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; *   index = &quot;$INDEX$&quot;,&#10; *   path = &quot;$PATH$&quot;&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Search Api Display" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@SearchApiParseMode" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @SearchApiParseMode(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Search Api Parse Mode" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@SearchApiProcessor" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @SearchApiProcessor(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;),&#10; *   stages = {&#10; *     &quot;$STAGEKEY$&quot; = $STAGEVALUE$,&#10; *   },&#10; *   locked = $LOCKED$,&#10; *   hidden = $HIDDEN$,&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Search Api Processor" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STAGEKEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STAGEVALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOCKED" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HIDDEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@SearchApiTracker" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @SearchApiTracker(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$)&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Search Api Tracker" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsField" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsField(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Views Field" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsFilter" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsFilter(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Views Filter" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsSort" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsSort(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Views Sort" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsJoin" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsJoin(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Views Join" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsRow" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsRow(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;),&#10; *   help = @Translation(&quot;$HELP$&quot;),&#10; *   theme = &quot;$THEME$&quot;,&#10; *   register_theme = $REGISTERTHEME$,&#10; *   base = {&quot;$BASE$&quot;},&#10; *   display_types = {&quot;$DISPLAYTYPE$&quot;}&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Row" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THEME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REGISTERTHEME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DISPLAYTYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsAccess" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsAccess(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;),&#10; *   help = @Translation(&quot;$HELP$&quot;)&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Access" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsDisplay" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsDisplay(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;),&#10; *   help = @Translation(&quot;$HELPTEXT$&quot;),&#10; *   theme = &quot;$THEME$&quot;,&#10; *   register_theme = $REGISTERTHEME$,&#10; *   uses_hook_block = $USESHOOKBLOCK$,&#10; *   uses_menu_link = $USESMENULINK$,&#10; *   uses_route = $USESROUTE$,&#10; *   return_response = $RETURNRESPONSE$,&#10; *   no_ui = $NOUI$,&#10; *   contextual_links_locations = {&quot;$CONTEXTUALLINK$&quot;},&#10; *   base = {&quot;$BASE$&quot;}&#10; *   admin = @Translation(&quot;$ADMINLABEL$&quot;)&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Display" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELPTEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THEME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REGISTERTHEME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="USESHOOKBLOCK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="USESMENULINK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="USESROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURNRESPONSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NOUI" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTEXTUALLINK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADMINLABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsDisplayExtender" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsDisplayExtender(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;),&#10; *   help = @Translation(&quot;$HELPTEXT$&quot;),&#10; *   no_ui = $NOUI$&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Display Extender" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELPTEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NOUI" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsArgument" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsArgument(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Views Argument" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsArgumentDefault" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsArgumentDefault(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;)&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Argument Default" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsArgumentValidator" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsArgumentValidator(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;),&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Argument Validator" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsArea" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsArea(&quot;$ID$&quot;)&#10; */" shortcut="SPACE" description="Annotation - Views Area" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsWizard" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsWizard(&#10; *   id = &quot;$ID$&quot;,&#10; *   module = &quot;$MODULE$&quot;,&#10; *   base_table = &quot;$BASETABLE$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;)&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Wizard" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BASETABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ViewsStyle" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ViewsStyle(&#10; *   id = &quot;$ID$&quot;,&#10; *   title = @Translation(&quot;$TITLE$&quot;),&#10; *   help = @Translation(&quot;$HELPTEXT$&quot;),&#10; *   no_ui = $NOUI$,&#10; *   theme = &quot;$THEME$&quot;,&#10; *   display_types = {&quot;$DISPLAYTYPE$&quot;}&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Views Style" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELPTEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NOUI" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THEME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DISPLAYTYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@ImageEffect" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @ImageEffect(&#10; *   id = &quot;$ID$&quot;,&#10; *   label = @Translation(&quot;$LABEL$&quot;),&#10; *   description = @Translation(&quot;$DESCRIPTION2$&quot;)&#10; * )&#10; */" shortcut="SPACE" description="Annotation - Image Effect" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
