@@ -1,5 +1,7 @@
 # PhpStorm IDE Configuration
 
+![Shellcheck](https://github.com/balintpekker/phpstorm-config/workflows/Shellcheck/badge.svg)
+
 This repository's goal is to share PhpStorm config between team members to keep everyone updated with the latest changes. This involves:
 
 Directory | Contents
