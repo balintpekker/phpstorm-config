@@ -16,6 +16,36 @@ case "${OSTYPE}" in
   msys*)    platform='msys' ;;
 esac
 
+# Function to copy files of this repository (except the README and this script)
+# recursively to the location specified in $1.
+copyfiles() {
+  local CONFIG_LIBRARY="$1"
+  local COPY_FAILURE=0
+  if [ "${PHPSTORM_VERSION}" != "" ]; then
+    echo ""
+    # Find all files located in config folder that are not hidden files or README.md or this script.
+    FOLDERS="$(find . -type d -not -path '*/\.*' -not -path './README.md' -not -path './update-config.bash' -not -path '.')"
+    for FOLDER in ${FOLDERS}
+    do
+      if ! cp -Rf "${FOLDER}" "${CONFIG_LIBRARY}"; then
+        COPY_FAILURE=1
+        echo -e "Failed to copy file(s) from \"${CYAN}'${FOLDER}'${NC}\""
+      else
+        echo -e "File(s) from \"${CYAN}'${FOLDER}'${NC}\" has been successfully copied."
+      fi
+    done
+    echo ""
+    if [ "${COPY_FAILURE}" -eq 0 ]; then
+      echo -e "${GREEN}Success!${NC}"
+      echo "Your PHPStorm configuration has been updated successfully."
+      echo "Please re-open your IDE to see the changes."
+    else
+      echo -e "${RED}Error!${NC}"
+      echo "There were some problems updating the configuration."
+    fi
+  fi
+}
+
 #
 # MacOS
 # ---
@@ -50,19 +80,17 @@ if [ "${platform}" = "linux" ]; then
   echo "${SCRIPT_LOCATION}"
 fi
 
-# Check for updates first before copying anything.
-# @todo
-
-# Copy new files to the respective places.
-if [ "${PHPSTORM_VERSION}" != "" ]; then
+# If the CONFIG_LIBRARY is successfully set, ask the user if they want to copy the file(s) to the designated place(s).
+if [ "${CONFIG_LIBRARY}" ]; then
   echo ""
-  echo -e "Copying files to ${CYAN}'${CONFIG_LIBRARY}'${NC}"
-  # Find all files located in config folder that are not hidden files or README.md or this script.
-  FOLDERS="$(find . -type d -not -path '*/\.*' -not -path './README.md' -not -path './update-config.bash' -not -path '.')"
-  for FOLDER in ${FOLDERS}
-  do
-    cp -Rf "${FOLDER}" "${CONFIG_LIBRARY}"
-  done
-  echo -e "${GREEN}Success!${NC}"
-  echo "Your PHPStorm configuration has been updated successfully."
+  echo "Configuration folder for your chosen PhpStorm version has been found:"
+  echo -e "${CYAN}'${CONFIG_LIBRARY}'${NC}"
+  echo ""
+  echo "The script will now copy the files from the repository to this location."
+  read -p "Do you wish to continue (Y/n)? " -n 1 -r
+  echo    # (optional) move to a new line
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+      copyfiles "${CONFIG_LIBRARY}"
+  fi
 fi
